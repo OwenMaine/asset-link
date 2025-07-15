@@ -1,0 +1,143 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f6; /* Light gray background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Main App Container */
+.app-container {
+    width: 100%;
+    max-width: 500px; /* Optimal for mobile view */
+    background-color: #ffffff; /* White background for the app */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px;
+    overflow: hidden; /* Ensures content stays within rounded corners */
+}
+
+/* Header Styling */
+.app-header {
+    background-color: #007bff; /* A nice, friendly blue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.app-header h1 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.app-header p {
+    margin: 5px 0 0;
+    opacity: 0.9;
+}
+
+/* Main Content Area */
+.app-main {
+    padding: 25px;
+    text-align: center;
+}
+
+/* Footer Styling */
+.app-footer {
+    padding: 20px;
+    border-top: 1px solid #eeeeee;
+}
+
+/* General Purpose Button Styling */
+button {
+    width: 100%;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Utility class to hide elements */
+.hidden {
+    display: none !important;
+}
+
+/* QR Reader Placeholder Styling */
+#qr-reader {
+    border: 2px dashed #cccccc;
+    border-radius: 8px;
+}
+
+/* --- Asset Card Styling --- */
+.asset-card {
+    text-align: left;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.asset-card h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.asset-card p {
+    margin: 4px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.asset-status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.asset-status.available {
+    color: #28a745; /* Green */
+    background-color: #e9f5ec;
+}
+
+.asset-status.checked-out {
+    color: #fd7e14; /* Orange */
+    background-color: #fff8e1;
+}
+
+.asset-actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+
+/* Specific button colors */
+.btn-check-out {
+    background-color: #fd7e14; /* Orange */
+}
+.btn-check-out:hover {
+    background-color: #e86a00;
+}
+
+.btn-check-in {
+    background-color: #28a745; /* Green */
+}
+.btn-check-in:hover {
+    background-color: #218838;
+}

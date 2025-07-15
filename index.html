@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AssetLink</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="app-container">
+        <header class="app-header">
+            <h1>AssetLink</h1>
+            <p>Your simplified asset tracker</p>
+        </header>
+
+        <main class="app-main">
+            <div id="scanner-view">
+                <h2>Scan an Asset QR Code</h2>
+                <div id="qr-reader" style="width:100%"></div>
+            </div>
+
+            <div id="asset-view" class="hidden">
+                </div>
+        </main>
+
+        <footer class="app-footer">
+            <button id="scan-again-btn" class="hidden">Scan Another Asset</button>
+        </footer>
+    </div>
+
+     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+    <script src="app.js"></script>
+
+    </body>
+</html>
